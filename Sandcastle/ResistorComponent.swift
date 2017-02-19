@@ -10,7 +10,7 @@ import SpriteKit
 
 public class ResistorComponent : Component {
   
-    var resister: ResistanceElement?
+    var resistor: ResistanceElement?
     var circuit: Circuit?
     
     init(circuit: Circuit, resistance: Double) {
@@ -31,11 +31,25 @@ public class ResistorComponent : Component {
         super.init(texture: texture, size: size)
         
         self.circuit = circuit
-        self.resister = circuit.addResistanceElement(resistance: resistance)
+        self.resistor = circuit.addResistanceElement(resistance: resistance)
     }
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func getElement() -> Element? {
+        // todo: check terminals
+        return self.resistor
+    }
+    
+    override func getTerminalPosition(wire: Wire) -> CGPoint {
+        if (wireTerminals.count == 0 || wireTerminals.index(of: wire) == 0) {
+            return CGPoint(x: self.position.x - (self.frame.width / 2), y: self.position.y - (self.frame.height / 4) + 5)
+        } else if (wireTerminals.count == 1 || wireTerminals.index(of: wire) == 1) {
+            return CGPoint(x: self.position.x + (self.frame.width / 2), y: self.position.y - (self.frame.height / 4) + 5)
+        }
+        return super.getTerminalPosition(wire: wire)
     }
     
 }

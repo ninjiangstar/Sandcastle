@@ -33,6 +33,7 @@
 		F26FE4131E5959D000EA1BCF /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4121E5959D000EA1BCF /* Circuit.swift */; };
 		F26FE4151E595C3D00EA1BCF /* GroundElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4141E595C3D00EA1BCF /* GroundElement.swift */; };
 		F26FE4171E596AC200EA1BCF /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4161E596AC200EA1BCF /* Queue.swift */; };
+		F2BB323C1E59DC1E0033D5B8 /* Wire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BB323B1E59DC1E0033D5B8 /* Wire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		F26FE4121E5959D000EA1BCF /* Circuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
 		F26FE4141E595C3D00EA1BCF /* GroundElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroundElement.swift; sourceTree = "<group>"; };
 		F26FE4161E596AC200EA1BCF /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		F2BB323B1E59DC1E0033D5B8 /* Wire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				F23712401E598BFB002B7BC0 /* ResistorComponent.swift */,
 				F23712421E598C09002B7BC0 /* LightComponent.swift */,
 				F23712441E598C29002B7BC0 /* SwitchComponent.swift */,
+				F2BB323B1E59DC1E0033D5B8 /* Wire.swift */,
 			);
 			name = CircuitComponents;
 			sourceTree = "<group>";
@@ -139,14 +142,14 @@
 		F26FE4111E5959B200EA1BCF /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				F26FE4141E595C3D00EA1BCF /* GroundElement.swift */,
-				F26FE4071E59575600EA1BCF /* Element.swift */,
-				F26FE4091E5957A200EA1BCF /* JunctionElement.swift */,
-				F26FE40B1E5957FB00EA1BCF /* VoltageElement.swift */,
-				F26FE40F1E59583F00EA1BCF /* ResistanceElement.swift */,
 				F26FE4121E5959D000EA1BCF /* Circuit.swift */,
+				F26FE4071E59575600EA1BCF /* Element.swift */,
+				F26FE4141E595C3D00EA1BCF /* GroundElement.swift */,
+				F26FE4091E5957A200EA1BCF /* JunctionElement.swift */,
 				F26FE4161E596AC200EA1BCF /* Queue.swift */,
+				F26FE40F1E59583F00EA1BCF /* ResistanceElement.swift */,
 				F23712391E597C40002B7BC0 /* Stack.swift */,
+				F26FE40B1E5957FB00EA1BCF /* VoltageElement.swift */,
 			);
 			name = Algorithm;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				F26FE4041E58D81A00EA1BCF /* CircuitContainer.swift in Sources */,
 				F26FE40C1E5957FB00EA1BCF /* VoltageElement.swift in Sources */,
 				F26FE40A1E5957A200EA1BCF /* JunctionElement.swift in Sources */,
+				F2BB323C1E59DC1E0033D5B8 /* Wire.swift in Sources */,
 				F26FE3E71E58C83D00EA1BCF /* GameScene.swift in Sources */,
 				F26FE4081E59575600EA1BCF /* Element.swift in Sources */,
 				F26FE3E91E58C83D00EA1BCF /* GameViewController.swift in Sources */,

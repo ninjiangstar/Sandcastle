@@ -9,6 +9,9 @@
 import SpriteKit
 
 public class Component : SKSpriteNode {
+    
+    var wireTerminals: [Wire] = []
+    
     public init() {
         super.init(
             texture: SKTexture(image: UIImage.init()),
@@ -25,5 +28,23 @@ public class Component : SKSpriteNode {
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func getElement() -> Element? {
+        return nil
+    }
+    
+    func getTerminalPosition(wire: Wire) -> CGPoint {
+        return self.position
+    }
+    
+    func addWire(wire: Wire) {
+        wireTerminals.append(wire)
+    }
+    
+    func updateWires() {
+        for wire in wireTerminals {
+            wire.drawConnectionPath()
+        }
     }
 }
