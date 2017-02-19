@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F237123A1E597C40002B7BC0 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23712391E597C40002B7BC0 /* Stack.swift */; };
+		F237123D1E598BC7002B7BC0 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237123C1E598BC7002B7BC0 /* Component.swift */; };
+		F237123F1E598BEA002B7BC0 /* BatteryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237123E1E598BEA002B7BC0 /* BatteryComponent.swift */; };
+		F23712411E598BFB002B7BC0 /* ResistorComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23712401E598BFB002B7BC0 /* ResistorComponent.swift */; };
+		F23712431E598C09002B7BC0 /* LightComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23712421E598C09002B7BC0 /* LightComponent.swift */; };
+		F23712451E598C29002B7BC0 /* SwitchComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23712441E598C29002B7BC0 /* SwitchComponent.swift */; };
 		F26FE3E11E58C83D00EA1BCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3E01E58C83D00EA1BCF /* AppDelegate.swift */; };
 		F26FE3E31E58C83D00EA1BCF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F26FE3E21E58C83D00EA1BCF /* GameScene.sks */; };
 		F26FE3E51E58C83D00EA1BCF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F26FE3E41E58C83D00EA1BCF /* Actions.sks */; };
@@ -16,14 +22,27 @@
 		F26FE3EE1E58C83D00EA1BCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26FE3ED1E58C83D00EA1BCF /* Assets.xcassets */; };
 		F26FE3F11E58C83D00EA1BCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26FE3EF1E58C83D00EA1BCF /* LaunchScreen.storyboard */; };
 		F26FE3FA1E58C86F00EA1BCF /* ComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3F91E58C86F00EA1BCF /* ComponentNode.swift */; };
-		F26FE3FC1E58C88100EA1BCF /* WireComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3FB1E58C88100EA1BCF /* WireComponent.swift */; };
 		F26FE3FE1E58D05F00EA1BCF /* GroundComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3FD1E58D05F00EA1BCF /* GroundComponentNode.swift */; };
 		F26FE4001E58D11000EA1BCF /* VoltageComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3FF1E58D11000EA1BCF /* VoltageComponentNode.swift */; };
 		F26FE4021E58D1F600EA1BCF /* BatteryComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4011E58D1F600EA1BCF /* BatteryComponentNode.swift */; };
 		F26FE4041E58D81A00EA1BCF /* CircuitContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4031E58D81A00EA1BCF /* CircuitContainer.swift */; };
+		F26FE4061E5927F900EA1BCF /* Toolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4051E5927F900EA1BCF /* Toolbox.swift */; };
+		F26FE4081E59575600EA1BCF /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4071E59575600EA1BCF /* Element.swift */; };
+		F26FE40A1E5957A200EA1BCF /* JunctionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4091E5957A200EA1BCF /* JunctionElement.swift */; };
+		F26FE40C1E5957FB00EA1BCF /* VoltageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE40B1E5957FB00EA1BCF /* VoltageElement.swift */; };
+		F26FE4101E59583F00EA1BCF /* ResistanceElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE40F1E59583F00EA1BCF /* ResistanceElement.swift */; };
+		F26FE4131E5959D000EA1BCF /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4121E5959D000EA1BCF /* Circuit.swift */; };
+		F26FE4151E595C3D00EA1BCF /* GroundElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4141E595C3D00EA1BCF /* GroundElement.swift */; };
+		F26FE4171E596AC200EA1BCF /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4161E596AC200EA1BCF /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F23712391E597C40002B7BC0 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		F237123C1E598BC7002B7BC0 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		F237123E1E598BEA002B7BC0 /* BatteryComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryComponent.swift; sourceTree = "<group>"; };
+		F23712401E598BFB002B7BC0 /* ResistorComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResistorComponent.swift; sourceTree = "<group>"; };
+		F23712421E598C09002B7BC0 /* LightComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightComponent.swift; sourceTree = "<group>"; };
+		F23712441E598C29002B7BC0 /* SwitchComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchComponent.swift; sourceTree = "<group>"; };
 		F26FE3DD1E58C83D00EA1BCF /* Sandcastle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandcastle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26FE3E01E58C83D00EA1BCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26FE3E21E58C83D00EA1BCF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -35,11 +54,18 @@
 		F26FE3F01E58C83D00EA1BCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F26FE3F21E58C83D00EA1BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F26FE3F91E58C86F00EA1BCF /* ComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentNode.swift; sourceTree = "<group>"; };
-		F26FE3FB1E58C88100EA1BCF /* WireComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireComponent.swift; sourceTree = "<group>"; };
 		F26FE3FD1E58D05F00EA1BCF /* GroundComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroundComponentNode.swift; sourceTree = "<group>"; };
 		F26FE3FF1E58D11000EA1BCF /* VoltageComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoltageComponentNode.swift; sourceTree = "<group>"; };
 		F26FE4011E58D1F600EA1BCF /* BatteryComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryComponentNode.swift; sourceTree = "<group>"; };
 		F26FE4031E58D81A00EA1BCF /* CircuitContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircuitContainer.swift; sourceTree = "<group>"; };
+		F26FE4051E5927F900EA1BCF /* Toolbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toolbox.swift; sourceTree = "<group>"; };
+		F26FE4071E59575600EA1BCF /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		F26FE4091E5957A200EA1BCF /* JunctionElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JunctionElement.swift; sourceTree = "<group>"; };
+		F26FE40B1E5957FB00EA1BCF /* VoltageElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoltageElement.swift; sourceTree = "<group>"; };
+		F26FE40F1E59583F00EA1BCF /* ResistanceElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResistanceElement.swift; sourceTree = "<group>"; };
+		F26FE4121E5959D000EA1BCF /* Circuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
+		F26FE4141E595C3D00EA1BCF /* GroundElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroundElement.swift; sourceTree = "<group>"; };
+		F26FE4161E596AC200EA1BCF /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +79,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F237123B1E598BA8002B7BC0 /* CircuitComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F237123C1E598BC7002B7BC0 /* Component.swift */,
+				F237123E1E598BEA002B7BC0 /* BatteryComponent.swift */,
+				F23712401E598BFB002B7BC0 /* ResistorComponent.swift */,
+				F23712421E598C09002B7BC0 /* LightComponent.swift */,
+				F23712441E598C29002B7BC0 /* SwitchComponent.swift */,
+			);
+			name = CircuitComponents;
+			sourceTree = "<group>";
+		};
 		F26FE3D41E58C83D00EA1BCF = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +110,9 @@
 		F26FE3DF1E58C83D00EA1BCF /* Sandcastle */ = {
 			isa = PBXGroup;
 			children = (
+				F237123B1E598BA8002B7BC0 /* CircuitComponents */,
 				F26FE3F81E58C85600EA1BCF /* Components */,
+				F26FE4111E5959B200EA1BCF /* Algorithm */,
 				F26FE3E01E58C83D00EA1BCF /* AppDelegate.swift */,
 				F26FE3E21E58C83D00EA1BCF /* GameScene.sks */,
 				F26FE3E41E58C83D00EA1BCF /* Actions.sks */,
@@ -83,6 +123,7 @@
 				F26FE3EF1E58C83D00EA1BCF /* LaunchScreen.storyboard */,
 				F26FE3F21E58C83D00EA1BCF /* Info.plist */,
 				F26FE4031E58D81A00EA1BCF /* CircuitContainer.swift */,
+				F26FE4051E5927F900EA1BCF /* Toolbox.swift */,
 			);
 			path = Sandcastle;
 			sourceTree = "<group>";
@@ -91,12 +132,26 @@
 			isa = PBXGroup;
 			children = (
 				F26FE3F91E58C86F00EA1BCF /* ComponentNode.swift */,
-				F26FE3FB1E58C88100EA1BCF /* WireComponent.swift */,
 				F26FE3FD1E58D05F00EA1BCF /* GroundComponentNode.swift */,
 				F26FE3FF1E58D11000EA1BCF /* VoltageComponentNode.swift */,
 				F26FE4011E58D1F600EA1BCF /* BatteryComponentNode.swift */,
 			);
 			name = Components;
+			sourceTree = "<group>";
+		};
+		F26FE4111E5959B200EA1BCF /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				F26FE4141E595C3D00EA1BCF /* GroundElement.swift */,
+				F26FE4071E59575600EA1BCF /* Element.swift */,
+				F26FE4091E5957A200EA1BCF /* JunctionElement.swift */,
+				F26FE40B1E5957FB00EA1BCF /* VoltageElement.swift */,
+				F26FE40F1E59583F00EA1BCF /* ResistanceElement.swift */,
+				F26FE4121E5959D000EA1BCF /* Circuit.swift */,
+				F26FE4161E596AC200EA1BCF /* Queue.swift */,
+				F23712391E597C40002B7BC0 /* Stack.swift */,
+			);
+			name = Algorithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,15 +229,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23712411E598BFB002B7BC0 /* ResistorComponent.swift in Sources */,
+				F26FE4131E5959D000EA1BCF /* Circuit.swift in Sources */,
+				F237123D1E598BC7002B7BC0 /* Component.swift in Sources */,
+				F26FE4151E595C3D00EA1BCF /* GroundElement.swift in Sources */,
 				F26FE3FE1E58D05F00EA1BCF /* GroundComponentNode.swift in Sources */,
+				F237123A1E597C40002B7BC0 /* Stack.swift in Sources */,
 				F26FE4021E58D1F600EA1BCF /* BatteryComponentNode.swift in Sources */,
 				F26FE4041E58D81A00EA1BCF /* CircuitContainer.swift in Sources */,
-				F26FE3FC1E58C88100EA1BCF /* WireComponent.swift in Sources */,
+				F26FE40C1E5957FB00EA1BCF /* VoltageElement.swift in Sources */,
+				F26FE40A1E5957A200EA1BCF /* JunctionElement.swift in Sources */,
 				F26FE3E71E58C83D00EA1BCF /* GameScene.swift in Sources */,
+				F26FE4081E59575600EA1BCF /* Element.swift in Sources */,
+				F26FE4061E5927F900EA1BCF /* Toolbox.swift in Sources */,
 				F26FE3E91E58C83D00EA1BCF /* GameViewController.swift in Sources */,
+				F23712431E598C09002B7BC0 /* LightComponent.swift in Sources */,
+				F23712451E598C29002B7BC0 /* SwitchComponent.swift in Sources */,
+				F26FE4171E596AC200EA1BCF /* Queue.swift in Sources */,
 				F26FE3E11E58C83D00EA1BCF /* AppDelegate.swift in Sources */,
 				F26FE4001E58D11000EA1BCF /* VoltageComponentNode.swift in Sources */,
 				F26FE3FA1E58C86F00EA1BCF /* ComponentNode.swift in Sources */,
+				F237123F1E598BEA002B7BC0 /* BatteryComponent.swift in Sources */,
+				F26FE4101E59583F00EA1BCF /* ResistanceElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +416,7 @@
 				F26FE3F71E58C83D00EA1BCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

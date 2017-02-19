@@ -22,7 +22,33 @@ class GameScene: SKScene {
     
     var gridSpace: Double = 20.0
     
-    var components: [ComponentNode] = []
+//    var components: [ComponentNode] = []
+    
+    var runs: Int = 0
+    
+    func ben() {
+        if(runs == 0)
+        {
+//            let resistor: ComponentNode = ComponentNode()
+//            resistor.position = CGPoint(x: 10, y: 10)
+//            self.addChild(resistor)
+//            components.append(resistor)
+//            
+//            
+//            
+//            for component in components {
+//                print("component" + String(component.resistance) + " " + String(component.volts) )
+//            }
+            
+            _ = Circuit()
+            
+            
+            
+            
+            
+        }
+        runs += 1
+    }
     
     override func sceneDidLoad() {
 
@@ -31,10 +57,12 @@ class GameScene: SKScene {
         self.lastUpdateTime = 0
         
         // add components
-        let firstComponent: ComponentNode = ComponentNode()
-        firstComponent.position = CGPoint(x: 0, y: 0)
-        self.addChild(firstComponent)
-        components.append(firstComponent)
+//        let firstComponent: BatteryComponentNode = BatteryComponentNode()
+//        firstComponent.position = CGPoint(x: 0, y: 0)
+//        self.addChild(firstComponent)
+//        components.append(firstComponent)
+        
+        ben()
     
     }
     
@@ -68,9 +96,9 @@ class GameScene: SKScene {
     func selectNodeForTouch(touchLocation: CGPoint) {
         var touchedNodes = self.nodes(at: touchLocation)
         
-        touchedNodes = touchedNodes.filter { (touchedNode) -> Bool in
-            return touchedNode is ComponentNode
-        }
+//        touchedNodes = touchedNodes.filter { (touchedNode) -> Bool in
+////            return touchedNode is ComponentNode
+//        }
         
         for selectedNode in selectedNodes {
             if (!touchedNodes.contains(where: { (touchedNode) -> Bool in
@@ -80,26 +108,26 @@ class GameScene: SKScene {
             }
         }
         
-        selectedNodes = touchedNodes as! [ComponentNode]
+//        selectedNodes = touchedNodes as! [ComponentNode]
     }
     
     func moveComponentsTo(touchLocation: CGPoint) {
         for selectedNode in selectedNodes {
             // todo: gradual snap to middle
             
-            if selectedNode is ComponentNode {
-                selectedNode.position = touchLocation
-            }
+//            if selectedNode is ComponentNode {
+//                selectedNode.position = touchLocation
+//            }
         }
     }
     
     func snapComponentAround(touchLocation: CGPoint) {
         for selectedNode in selectedNodes {
-            if selectedNode is ComponentNode {
-                selectedNode.position = CGPoint(
-                    x: round(Double(touchLocation.x) / gridSpace) * gridSpace,
-                    y: round(Double(touchLocation.y) / gridSpace) * gridSpace)
-            }
+//            if selectedNode is ComponentNode {
+//                selectedNode.position = CGPoint(
+//                    x: round(Double(touchLocation.x) / gridSpace) * gridSpace,
+//                    y: round(Double(touchLocation.y) / gridSpace) * gridSpace)
+//            }
         }
     }
     
