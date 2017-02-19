@@ -102,6 +102,32 @@ class GameScene: SKScene {
         activeWire?.connect(to: to)
         if (activeWire != nil) {
             wires.append(activeWire!)
+            runSim()
+        }
+    }
+    
+    func runSim() {
+        // this is currently hardcoded
+        
+        if wires.count == 2
+            && (wires[0].from is BatteryComponent || wires[0].from is BatteryComponent)
+            && (wires[0].from is LightComponent || wires[0].to is LightComponent)
+            && (wires[1].from is BatteryComponent || wires[1].from is BatteryComponent)
+            && (wires[1].from is LightComponent || wires[1].to is LightComponent) {
+            let lights = (wires[0].from is LightComponent ? wires[0].from : wires[0].to) as! LightComponent
+            lights.turnBroken()
+        }
+        
+        if wires.count == 3
+            && (wires[0].from is BatteryComponent || wires[0].from is LightComponent || wires[0].from is ResistorComponent)
+            && (wires[1].from is BatteryComponent || wires[1].from is LightComponent || wires[1].from is ResistorComponent)
+            && (wires[2].from is BatteryComponent || wires[2].from is LightComponent || wires[2].from is ResistorComponent) {
+            for component in components {
+                if (component is LightComponent) {
+                    (component as! LightComponent).turnOn()
+                    break
+                }
+            }
         }
     }
     
@@ -180,7 +206,7 @@ class GameScene: SKScene {
     func onLongPressBegan(touchLocation: CGPoint, node: Component?) {
         self.onReaderBegan(touchLocation: touchLocation, node: node)
         if (node != nil) {
-            node!.run(SKAction.scale(to: 1.2, duration: 0.1))
+            node!.run(SKAction.scale(to: 1.2, duration: 0.05))
             let rotateLeft = SKAction.rotate(toAngle: CGFloat(M_PI/24), duration: 0.3)
             let rotateRight = SKAction.rotate(toAngle: CGFloat(-M_PI/24), duration: 0.3)
             node!.run(SKAction.repeatForever(SKAction.sequence([rotateLeft, rotateRight])))
@@ -197,8 +223,8 @@ class GameScene: SKScene {
     func onLongPressEnded(touchLocation: CGPoint, node: Component?) {
         snapComponentAround(touchLocation: touchLocation, node: node)
         if (node != nil) {
-            let scale: SKAction = SKAction.scale(to: 1, duration: 0.1)
-            let rotate: SKAction = SKAction.rotate(toAngle: CGFloat(0), duration: 0.1)
+            let scale: SKAction = SKAction.scale(to: 1, duration: 0.05)
+            let rotate: SKAction = SKAction.rotate(toAngle: CGFloat(0), duration: 0.05)
             let next: SKAction = SKAction.run {
                 node!.updateWires()
             }
@@ -208,7 +234,7 @@ class GameScene: SKScene {
     
     func moveComponent(to: CGPoint, node: Component?) {
         if (node != nil) {
-            let move: SKAction = SKAction.move(to: to, duration: 0.1)
+            let move: SKAction = SKAction.move(to: to, duration: 0.05)
             node!.run(move)
         }
     }
