@@ -14,13 +14,26 @@ public class LightComponent : Component {
     var circuit: Circuit?
     
     init(circuit: Circuit, resistance: Double) {
-        super.init()
+        var lightTexture: SKTexture = SKTexture(image: #imageLiteral(resourceName: "bulb-inactive"))
+        super.init(texture: lightTexture, size: CGSize(width: 214/2, height: 302/2))
         self.circuit = circuit
         self.resistor = circuit.addResistanceElement(resistance: resistance)
     }
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func turnOn() {
+        self.texture = SKTexture(image: #imageLiteral(resourceName: "bulb-active"))
+    }
+    
+    func turnOff() {
+        self.texture = SKTexture(image: #imageLiteral(resourceName: "bulb-inactive"))
+    }
+    
+    func turnBroken() {
+        self.texture = SKTexture(image: #imageLiteral(resourceName: "bulb-broken"))
     }
     
 }

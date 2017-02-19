@@ -26,7 +26,6 @@
 		F26FE4001E58D11000EA1BCF /* VoltageComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3FF1E58D11000EA1BCF /* VoltageComponentNode.swift */; };
 		F26FE4021E58D1F600EA1BCF /* BatteryComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4011E58D1F600EA1BCF /* BatteryComponentNode.swift */; };
 		F26FE4041E58D81A00EA1BCF /* CircuitContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4031E58D81A00EA1BCF /* CircuitContainer.swift */; };
-		F26FE4061E5927F900EA1BCF /* Toolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4051E5927F900EA1BCF /* Toolbox.swift */; };
 		F26FE4081E59575600EA1BCF /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4071E59575600EA1BCF /* Element.swift */; };
 		F26FE40A1E5957A200EA1BCF /* JunctionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4091E5957A200EA1BCF /* JunctionElement.swift */; };
 		F26FE40C1E5957FB00EA1BCF /* VoltageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE40B1E5957FB00EA1BCF /* VoltageElement.swift */; };
@@ -58,7 +57,6 @@
 		F26FE3FF1E58D11000EA1BCF /* VoltageComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoltageComponentNode.swift; sourceTree = "<group>"; };
 		F26FE4011E58D1F600EA1BCF /* BatteryComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryComponentNode.swift; sourceTree = "<group>"; };
 		F26FE4031E58D81A00EA1BCF /* CircuitContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircuitContainer.swift; sourceTree = "<group>"; };
-		F26FE4051E5927F900EA1BCF /* Toolbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toolbox.swift; sourceTree = "<group>"; };
 		F26FE4071E59575600EA1BCF /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		F26FE4091E5957A200EA1BCF /* JunctionElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JunctionElement.swift; sourceTree = "<group>"; };
 		F26FE40B1E5957FB00EA1BCF /* VoltageElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoltageElement.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				F26FE3EF1E58C83D00EA1BCF /* LaunchScreen.storyboard */,
 				F26FE3F21E58C83D00EA1BCF /* Info.plist */,
 				F26FE4031E58D81A00EA1BCF /* CircuitContainer.swift */,
-				F26FE4051E5927F900EA1BCF /* Toolbox.swift */,
 				F26FE3F81E58C85600EA1BCF /* Components */,
 			);
 			path = Sandcastle;
@@ -241,7 +238,6 @@
 				F26FE40A1E5957A200EA1BCF /* JunctionElement.swift in Sources */,
 				F26FE3E71E58C83D00EA1BCF /* GameScene.swift in Sources */,
 				F26FE4081E59575600EA1BCF /* Element.swift in Sources */,
-				F26FE4061E5927F900EA1BCF /* Toolbox.swift in Sources */,
 				F26FE3E91E58C83D00EA1BCF /* GameViewController.swift in Sources */,
 				F23712431E598C09002B7BC0 /* LightComponent.swift in Sources */,
 				F23712451E598C29002B7BC0 /* SwitchComponent.swift in Sources */,

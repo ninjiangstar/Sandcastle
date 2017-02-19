@@ -20,39 +20,58 @@ class GameScene: SKScene {
 
     var selectedNodes: [SKSpriteNode] = []
     
-    var gridSpace: Double = 20.0
+    var gridSpace: Double = 40.0
     
 //    var components: [ComponentNode] = []
     
     var runs: Int = 0
     
-    func ben() {
-        if(runs == 0)
-        {
-            let circuit: Circuit = Circuit()
-            let battery: Component = BatteryComponent(circuit: circuit, voltage: 5)
-            self.addChild(battery)
-            
-            
-        }
-        runs += 1
+    func populateCircuit() {
+        
+        // create circuit
+        let circuit: Circuit = Circuit()
+        
+        // battery
+        let battery: Component = BatteryComponent(circuit: circuit, voltage: 5)
+        battery.position.x = (-self.frame.size.width * 3) / 5 / 1.75
+        battery.position.y = -self.frame.size.height / 4.5 - 50
+        self.addChild(battery)
+        
+        // resistors
+        let resistor1: Component = ResistorComponent(circuit: circuit, resistance: 1000)
+        resistor1.position.x = (self.frame.size.width * 3) / 5 / 1.75
+        resistor1.position.y = -self.frame.size.height / 4.5 + 50
+        let resistor2: Component = ResistorComponent(circuit: circuit, resistance: 2500)
+        resistor2.position.x = self.frame.size.width / 5 / 1.75
+        resistor2.position.y = -self.frame.size.height / 4.5 - 50
+        let resistor3: Component = ResistorComponent(circuit: circuit, resistance: 5000)
+        resistor3.position.x = -self.frame.size.width / 5 / 1.75
+        resistor3.position.y = -self.frame.size.height / 4.5 + 50
+        self.addChild(resistor1)
+        self.addChild(resistor2)
+        self.addChild(resistor3)
+        
+        // lightbulb
+        let lightbulb: Component = LightComponent(circuit: circuit, resistance: 2500)
+        lightbulb.position.y = self.frame.size.width / 5
+        self.addChild(lightbulb)
+        
     }
     
     override func sceneDidLoad() {
-
-        self.backgroundColor = UIColor.white;
-        
         self.lastUpdateTime = 0
+        self.backgroundColor = UIColor.clear
         
-        ben()
-    
+        if runs == 0 {
+            populateCircuit()
+        }
+        runs += 1
     }
     
     // runs only once; essentially the same as "viewDidAppear"
     override func didMove(to view: SKView) {
         let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(recognizer:)))
         self.view!.addGestureRecognizer(gestureRecognizer)
-
     }
     
     // called by gesture recognizer
