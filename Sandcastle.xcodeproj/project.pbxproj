@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F26FE3E11E58C83D00EA1BCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3E01E58C83D00EA1BCF /* AppDelegate.swift */; };
+		F26FE3E31E58C83D00EA1BCF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F26FE3E21E58C83D00EA1BCF /* GameScene.sks */; };
+		F26FE3E51E58C83D00EA1BCF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F26FE3E41E58C83D00EA1BCF /* Actions.sks */; };
+		F26FE3E71E58C83D00EA1BCF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3E61E58C83D00EA1BCF /* GameScene.swift */; };
+		F26FE3E91E58C83D00EA1BCF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3E81E58C83D00EA1BCF /* GameViewController.swift */; };
+		F26FE3EC1E58C83D00EA1BCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26FE3EA1E58C83D00EA1BCF /* Main.storyboard */; };
+		F26FE3EE1E58C83D00EA1BCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26FE3ED1E58C83D00EA1BCF /* Assets.xcassets */; };
+		F26FE3F11E58C83D00EA1BCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26FE3EF1E58C83D00EA1BCF /* LaunchScreen.storyboard */; };
+		F26FE3FA1E58C86F00EA1BCF /* ComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3F91E58C86F00EA1BCF /* ComponentNode.swift */; };
+		F26FE3FC1E58C88100EA1BCF /* WireComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3FB1E58C88100EA1BCF /* WireComponent.swift */; };
+		F26FE3FE1E58D05F00EA1BCF /* GroundComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3FD1E58D05F00EA1BCF /* GroundComponentNode.swift */; };
+		F26FE4001E58D11000EA1BCF /* VoltageComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE3FF1E58D11000EA1BCF /* VoltageComponentNode.swift */; };
+		F26FE4021E58D1F600EA1BCF /* BatteryComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4011E58D1F600EA1BCF /* BatteryComponentNode.swift */; };
+		F26FE4041E58D81A00EA1BCF /* CircuitContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FE4031E58D81A00EA1BCF /* CircuitContainer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F26FE3DD1E58C83D00EA1BCF /* Sandcastle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandcastle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26FE3E01E58C83D00EA1BCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F26FE3E21E58C83D00EA1BCF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F26FE3E41E58C83D00EA1BCF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		F26FE3E61E58C83D00EA1BCF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F26FE3E81E58C83D00EA1BCF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F26FE3EB1E58C83D00EA1BCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F26FE3ED1E58C83D00EA1BCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F26FE3F01E58C83D00EA1BCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F26FE3F21E58C83D00EA1BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26FE3F91E58C86F00EA1BCF /* ComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentNode.swift; sourceTree = "<group>"; };
+		F26FE3FB1E58C88100EA1BCF /* WireComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireComponent.swift; sourceTree = "<group>"; };
+		F26FE3FD1E58D05F00EA1BCF /* GroundComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroundComponentNode.swift; sourceTree = "<group>"; };
+		F26FE3FF1E58D11000EA1BCF /* VoltageComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoltageComponentNode.swift; sourceTree = "<group>"; };
+		F26FE4011E58D1F600EA1BCF /* BatteryComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryComponentNode.swift; sourceTree = "<group>"; };
+		F26FE4031E58D81A00EA1BCF /* CircuitContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircuitContainer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F26FE3DA1E58C83D00EA1BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F26FE3D41E58C83D00EA1BCF = {
+			isa = PBXGroup;
+			children = (
+				F26FE3DF1E58C83D00EA1BCF /* Sandcastle */,
+				F26FE3DE1E58C83D00EA1BCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F26FE3DE1E58C83D00EA1BCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F26FE3DD1E58C83D00EA1BCF /* Sandcastle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F26FE3DF1E58C83D00EA1BCF /* Sandcastle */ = {
+			isa = PBXGroup;
+			children = (
+				F26FE3F81E58C85600EA1BCF /* Components */,
+				F26FE3E01E58C83D00EA1BCF /* AppDelegate.swift */,
+				F26FE3E21E58C83D00EA1BCF /* GameScene.sks */,
+				F26FE3E41E58C83D00EA1BCF /* Actions.sks */,
+				F26FE3E61E58C83D00EA1BCF /* GameScene.swift */,
+				F26FE3E81E58C83D00EA1BCF /* GameViewController.swift */,
+				F26FE3EA1E58C83D00EA1BCF /* Main.storyboard */,
+				F26FE3ED1E58C83D00EA1BCF /* Assets.xcassets */,
+				F26FE3EF1E58C83D00EA1BCF /* LaunchScreen.storyboard */,
+				F26FE3F21E58C83D00EA1BCF /* Info.plist */,
+				F26FE4031E58D81A00EA1BCF /* CircuitContainer.swift */,
+			);
+			path = Sandcastle;
+			sourceTree = "<group>";
+		};
+		F26FE3F81E58C85600EA1BCF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F26FE3F91E58C86F00EA1BCF /* ComponentNode.swift */,
+				F26FE3FB1E58C88100EA1BCF /* WireComponent.swift */,
+				F26FE3FD1E58D05F00EA1BCF /* GroundComponentNode.swift */,
+				F26FE3FF1E58D11000EA1BCF /* VoltageComponentNode.swift */,
+				F26FE4011E58D1F600EA1BCF /* BatteryComponentNode.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F26FE3DC1E58C83D00EA1BCF /* Sandcastle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26FE3F51E58C83D00EA1BCF /* Build configuration list for PBXNativeTarget "Sandcastle" */;
+			buildPhases = (
+				F26FE3D91E58C83D00EA1BCF /* Sources */,
+				F26FE3DA1E58C83D00EA1BCF /* Frameworks */,
+				F26FE3DB1E58C83D00EA1BCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sandcastle;
+			productName = Sandcastle;
+			productReference = F26FE3DD1E58C83D00EA1BCF /* Sandcastle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F26FE3D51E58C83D00EA1BCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Andrew Jiang";
+				TargetAttributes = {
+					F26FE3DC1E58C83D00EA1BCF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K565TGBZ43;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F26FE3D81E58C83D00EA1BCF /* Build configuration list for PBXProject "Sandcastle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F26FE3D41E58C83D00EA1BCF;
+			productRefGroup = F26FE3DE1E58C83D00EA1BCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F26FE3DC1E58C83D00EA1BCF /* Sandcastle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F26FE3DB1E58C83D00EA1BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26FE3EC1E58C83D00EA1BCF /* Main.storyboard in Resources */,
+				F26FE3E31E58C83D00EA1BCF /* GameScene.sks in Resources */,
+				F26FE3EE1E58C83D00EA1BCF /* Assets.xcassets in Resources */,
+				F26FE3F11E58C83D00EA1BCF /* LaunchScreen.storyboard in Resources */,
+				F26FE3E51E58C83D00EA1BCF /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F26FE3D91E58C83D00EA1BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26FE3FE1E58D05F00EA1BCF /* GroundComponentNode.swift in Sources */,
+				F26FE4021E58D1F600EA1BCF /* BatteryComponentNode.swift in Sources */,
+				F26FE4041E58D81A00EA1BCF /* CircuitContainer.swift in Sources */,
+				F26FE3FC1E58C88100EA1BCF /* WireComponent.swift in Sources */,
+				F26FE3E71E58C83D00EA1BCF /* GameScene.swift in Sources */,
+				F26FE3E91E58C83D00EA1BCF /* GameViewController.swift in Sources */,
+				F26FE3E11E58C83D00EA1BCF /* AppDelegate.swift in Sources */,
+				F26FE4001E58D11000EA1BCF /* VoltageComponentNode.swift in Sources */,
+				F26FE3FA1E58C86F00EA1BCF /* ComponentNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F26FE3EA1E58C83D00EA1BCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26FE3EB1E58C83D00EA1BCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F26FE3EF1E58C83D00EA1BCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26FE3F01E58C83D00EA1BCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F26FE3F31E58C83D00EA1BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F26FE3F41E58C83D00EA1BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F26FE3F61E58C83D00EA1BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K565TGBZ43;
+				INFOPLIST_FILE = Sandcastle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewjiang.Sandcastle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F26FE3F71E58C83D00EA1BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K565TGBZ43;
+				INFOPLIST_FILE = Sandcastle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewjiang.Sandcastle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F26FE3D81E58C83D00EA1BCF /* Build configuration list for PBXProject "Sandcastle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26FE3F31E58C83D00EA1BCF /* Debug */,
+				F26FE3F41E58C83D00EA1BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26FE3F51E58C83D00EA1BCF /* Build configuration list for PBXNativeTarget "Sandcastle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26FE3F61E58C83D00EA1BCF /* Debug */,
+				F26FE3F71E58C83D00EA1BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F26FE3D51E58C83D00EA1BCF /* Project object */;
+}
