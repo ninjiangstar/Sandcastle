@@ -111,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				F237123B1E598BA8002B7BC0 /* CircuitComponents */,
-				F26FE3F81E58C85600EA1BCF /* Components */,
 				F26FE4111E5959B200EA1BCF /* Algorithm */,
 				F26FE3E01E58C83D00EA1BCF /* AppDelegate.swift */,
 				F26FE3E21E58C83D00EA1BCF /* GameScene.sks */,
@@ -124,6 +123,7 @@
 				F26FE3F21E58C83D00EA1BCF /* Info.plist */,
 				F26FE4031E58D81A00EA1BCF /* CircuitContainer.swift */,
 				F26FE4051E5927F900EA1BCF /* Toolbox.swift */,
+				F26FE3F81E58C85600EA1BCF /* Components */,
 			);
 			path = Sandcastle;
 			sourceTree = "<group>";

@@ -11,9 +11,16 @@ import SpriteKit
 public class Component : SKSpriteNode {
     public init() {
         super.init(
-            texture: SKTexture(image:#imageLiteral(resourceName: "Spaceship")),
-            color: UIColor.black,
+            texture: SKTexture(image: UIImage.init()),
+            color: UIColor.init(white: CGFloat(100), alpha: CGFloat(0)),
             size: CGSize(width: 100, height: 100))
+    }
+    
+    public init(texture: SKTexture, size: CGSize) {
+        super.init(
+            texture: texture,
+            color: UIColor.init(white: CGFloat(100), alpha: CGFloat(0)),
+            size: size)
     }
     
     required public init?(coder aDecoder: NSCoder) {

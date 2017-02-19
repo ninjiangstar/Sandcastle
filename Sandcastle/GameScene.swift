@@ -29,21 +29,9 @@ class GameScene: SKScene {
     func ben() {
         if(runs == 0)
         {
-//            let resistor: ComponentNode = ComponentNode()
-//            resistor.position = CGPoint(x: 10, y: 10)
-//            self.addChild(resistor)
-//            components.append(resistor)
-//            
-//            
-//            
-//            for component in components {
-//                print("component" + String(component.resistance) + " " + String(component.volts) )
-//            }
-            
-            _ = Circuit()
-            
-            
-            
+            let circuit: Circuit = Circuit()
+            let battery: Component = BatteryComponent(circuit: circuit, voltage: 5)
+            self.addChild(battery)
             
             
         }
@@ -55,12 +43,6 @@ class GameScene: SKScene {
         self.backgroundColor = UIColor.white;
         
         self.lastUpdateTime = 0
-        
-        // add components
-//        let firstComponent: BatteryComponentNode = BatteryComponentNode()
-//        firstComponent.position = CGPoint(x: 0, y: 0)
-//        self.addChild(firstComponent)
-//        components.append(firstComponent)
         
         ben()
     
@@ -96,9 +78,9 @@ class GameScene: SKScene {
     func selectNodeForTouch(touchLocation: CGPoint) {
         var touchedNodes = self.nodes(at: touchLocation)
         
-//        touchedNodes = touchedNodes.filter { (touchedNode) -> Bool in
-////            return touchedNode is ComponentNode
-//        }
+        touchedNodes = touchedNodes.filter { (touchedNode) -> Bool in
+            return touchedNode is Component
+        }
         
         for selectedNode in selectedNodes {
             if (!touchedNodes.contains(where: { (touchedNode) -> Bool in
@@ -108,26 +90,26 @@ class GameScene: SKScene {
             }
         }
         
-//        selectedNodes = touchedNodes as! [ComponentNode]
+        selectedNodes = touchedNodes as! [Component]
     }
     
     func moveComponentsTo(touchLocation: CGPoint) {
         for selectedNode in selectedNodes {
             // todo: gradual snap to middle
             
-//            if selectedNode is ComponentNode {
-//                selectedNode.position = touchLocation
-//            }
+            if selectedNode is Component {
+                selectedNode.position = touchLocation
+            }
         }
     }
     
     func snapComponentAround(touchLocation: CGPoint) {
         for selectedNode in selectedNodes {
-//            if selectedNode is ComponentNode {
-//                selectedNode.position = CGPoint(
-//                    x: round(Double(touchLocation.x) / gridSpace) * gridSpace,
-//                    y: round(Double(touchLocation.y) / gridSpace) * gridSpace)
-//            }
+            if selectedNode is Component {
+                selectedNode.position = CGPoint(
+                    x: round(Double(touchLocation.x) / gridSpace) * gridSpace,
+                    y: round(Double(touchLocation.y) / gridSpace) * gridSpace)
+            }
         }
     }
     

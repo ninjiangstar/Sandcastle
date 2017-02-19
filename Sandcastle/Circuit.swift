@@ -30,7 +30,7 @@ public class Circuit {
         _ = createEdge(from: junction1, to: battery2.source)
         
         let junctionEdges = generateJunctionEdges()
-        let kirchhoffsMatrix = generateKirchhoffsCurrentMatrix(junctionEdges: junctionEdges)
+        var kirchhoffsMatrix = generateKirchhoffsCurrentMatrix(junctionEdges: junctionEdges)
         kirchhoffsMatrix = generateKirchhoffsVoltageMatrix(currentMatrix: kirchhoffsMatrix)
         
     }
@@ -180,6 +180,6 @@ public class Circuit {
      implementing a graph
      */
     func generateKirchhoffsVoltageMatrix(currentMatrix: [[Int]]) -> [[Int]] {
-        
+        return [[]]
     }
 }

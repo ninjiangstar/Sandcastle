@@ -9,5 +9,18 @@
 import SpriteKit
 
 public class ResistorComponent : Component {
+  
+    var resister: ResistanceElement?
+    var circuit: Circuit?
+    
+    init(circuit: Circuit, resistance: Double) {
+        super.init()
+        self.circuit = circuit
+        self.resister = circuit.addResistanceElement(resistance: resistance)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
 }

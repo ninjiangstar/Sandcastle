@@ -9,4 +9,19 @@
 import SpriteKit
 
 public class BatteryComponent : Component {
+    
+    var battery: (source: VoltageElement, ground: GroundElement, edge: (from: Element, to: Element))?
+    var circuit: Circuit?
+    
+    init(circuit: Circuit, voltage: Double) {
+        super.init(texture: SKTexture(image: #imageLiteral(resourceName: "battery")), size: CGSize(width: 57, height: 85))
+        self.circuit = circuit
+        self.battery = circuit.addBatteryElement(voltage: voltage)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
 }
